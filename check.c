@@ -1,0 +1,28 @@
+#include "shell.h"
+
+/**
+* check_isatty - function checks if the standard input is associated
+* with a terminal
+*
+* Return: Nothing.
+*/
+void check_isatty(void)
+{
+	if (isatty(STDIN_FILENO))
+	{
+		please_print_me("$ ");
+	}
+}
+
+/**
+* check_exit - function is responsible for freeing some memory
+* and exit
+* @command: pointer to a pointer to a character array
+* @status: pointer to an integer
+* Return: Nothing.
+*/
+void check_exit(char **command, int *status)
+{
+	free_arguments(command);
+	exit(*status);
+}
