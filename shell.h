@@ -8,11 +8,12 @@
 #include <stdbool.h>
 #include <sys/types.h>
 #include <sys/wait.h>
-/*envi*/
-extern char **environ;
 
+extern char **environ;
+int roulete(char **argument, int i, int *status);
 void please_print_me(char *str);
 void check_exit(char **command, int *status);
+void perror_exit_failure();
 void check_isatty();
 char *read_command(void);
 char **split_command(char *command);
