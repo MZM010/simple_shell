@@ -93,7 +93,7 @@ int roulete(char **argument, int i, int *status)
 					printf("cmd\n");
 					break;
 				case 1:
-					printf("env\n");
+					check_env();
 					break;
 				case 2:
 					check_exit(argument, status);
