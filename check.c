@@ -26,3 +26,17 @@ void check_exit(char **command, int *status)
 	free_arguments(command);
 	exit(*status);
 }
+
+/**
+* check_env - function is responsible for env
+*
+* Return: Nothing.
+*/
+void check_env(void)
+{
+char **env;
+
+for (env = environ; *env != NULL; env++)
+printf("%s\n", *env);
+}
+
