@@ -81,7 +81,7 @@ void write_error(char *programme)
  */
 int roulete(char **argument, int i, int *status)
 {
-	char *commands[] = {"cmd", "env", "exit", "set", "unset"};
+	char *commands[] = {"cmd", "env", "exit"};
 
 	for (i = 0; i < 3; i++)
 	{

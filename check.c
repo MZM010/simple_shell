@@ -32,11 +32,14 @@ void check_exit(char **command, int *status)
 *
 * Return: Nothing.
 */
-void check_env(void)
+void check_env()
 {
-char **env;
-
-for (env = environ; *env != NULL; env++)
-printf("%s\n", *env);
+  int counter;
+  
+  for (counter  = 0; environ[counter] != NULL; counter++)
+  {
+	please_print_me(environ[counter]);
+	please_print_me("\n");
+	}
 }
 

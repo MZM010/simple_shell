@@ -22,7 +22,7 @@ int extractExitStatus(int status);
 void check_command(char **argument, int *status);
 void free_arguments(char **argument);
 void write_error(char *programme);
-void check_env(void);
+void check_env();
 
 
 #endif
