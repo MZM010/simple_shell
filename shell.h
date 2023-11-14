@@ -11,10 +11,12 @@
 
 extern char **environ;
 int roulete(char **argument, int i, int *status);
+char *check_directory(const char *dir, const char *command);
+char **allocate_and_assign(char *command, int *count);
 void please_print_me(char *str);
 void check_exit(char **command, int *status);
-void perror_exit_failure();
-void check_isatty();
+void perror_exit_failure(void);
+void check_isatty(void);
 char *read_command(void);
 char **split_command(char *command);
 char *get_path(char *command);
@@ -22,7 +24,7 @@ int extractExitStatus(int status);
 void check_command(char **argument, int *status);
 void free_arguments(char **argument);
 void write_error(char *programme);
-void check_env();
+void check_env(void);
 
 
 #endif

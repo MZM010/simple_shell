@@ -1,9 +1,9 @@
 #include "shell.h"
-
-
-
-void perror_exit_failure()
+/**
+ * perror_exit_failure - print error
+ */
+void perror_exit_failure(void)
 {
-    perror("execve");
-    exit(EXIT_FAILURE);
+	perror("execve");
+	exit(EXIT_FAILURE);
 }
