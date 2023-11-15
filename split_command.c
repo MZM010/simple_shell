@@ -1,9 +1,9 @@
 #include "shell.h"
 /**
- * allocate_and_assign - extract the exit status
- * @command: status
- * @count: count
- * Return: each value
+ * allocate_and_assign - Extract the state
+ * @command: Status
+ * @count: Count
+ * Return: Each value
  */
 char **allocate_and_assign(char *command, int *count)
 {
@@ -47,9 +47,9 @@ char **allocate_and_assign(char *command, int *count)
 	return (big_one);
 }
 /**
- * split_command - extract the exit status
- * @command: status
- * Return: each value
+ * split_command - Extract the exit status
+ * @command: Status
+ * Return: Each value
  */
 
 char **split_command(char *command)
