@@ -1,7 +1,7 @@
 #include "shell.h"
 
 /**
- * read_command - function that read the command
+ * read_command - Function that read and process the command.
  *
  * Return: Nothing.
  */
